@@ -1,0 +1,37 @@
+.thumbnail img{
+	border-radius: 50%;
+}
+.layout{
+	margin-left: 8px;
+}
+#bizpro{
+	width:30%;
+	float: left;
+	margin-right: 3px;
+}
+#bizname{
+	width: 46%;
+	float: left;
+}
+#logo{
+	width: 15%;
+	float: left;
+	margin-right: 3px;
+}
+#story{
+	border-top: 10px;
+	width:30%;
+	float: left;
+	margin-right: 3px;
+}
+#aside{
+	border-top: 10px;
+	width:46%;
+	float: left;
+	margin-right: 3px;
+}
+#contact{
+	border-top: 10px;
+	width:20%;
+	float: left;
+}
