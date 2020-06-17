@@ -23,15 +23,15 @@ body, html{
   position: absolute;
   top: 120px;
   z-index: 2;
-  left: 40%;
+  left: 38%;
 }
 .bg-text {
-    top: 380px;
+    top: 300px;
     position: absolute;
     color:white;
     font-weight: bold;
     z-index: 3;  
-    left: 40%;
+    left: 37%;
 }
 .bg-text a{
     color: bisque;
