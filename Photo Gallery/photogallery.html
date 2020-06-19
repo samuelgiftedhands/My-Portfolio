@@ -3,8 +3,37 @@
   <head>
 <title>Gallery</title>
 <link rel="stylesheet" href="photogallery.css"/>
+<link rel="stylesheet" href="../Profile/bootstrap.css"/>
    </head>
 <body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					   <a href="#" style="text-decoration: none;"><img src="logo.jpg" width="50" height="50"/>
+						 <span style="color:firebrick; font-size: 2rem;">2gether</span></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-nav-demo">
+						<ul class="nav navbar-nav">
+							<li><a href="../Profile/InnerProfile.html">Return</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav><br><br>
 	<!-- main content-->
 <div id="container">
  <img  class="slides" src="funmiray1.jpg"/>
@@ -19,6 +48,7 @@
  <button class="btn" onclick ="plusIndex(1)" id="btn2">&#10095;
  </button>
  </div>
+
  </body>
  
  <!--javascript-->

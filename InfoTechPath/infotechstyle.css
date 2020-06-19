@@ -33,23 +33,25 @@ body{
       color: white;
       background-color: #00E8E8;
 }
-  .site-content{
+.site-content{
       background-image: url('photo-dark.jpg');
       background-attachment: fixed;
       background-size: cover;
 }
 
 .site-title, .site-desc{
+      text-align: center;
       color: white;
       font-family: 'Righteous';
 }
 .site-title{
+      text-align: center;
       margin-top: 30%;
       margin-bottom: 6%;
       font-size: 60px; 
 }
 .site-desc{
-      font-size: 14px;
+      font-size: 20px;
       padding-left: 15%;
 }
 .site-btn1{
@@ -57,11 +59,10 @@ body{
     background-color: black;
     color: white;
 }
-
 .site-btn2{
+      text-align: center;
       background-color: white;
 }
-
 .site-btn1, .site-btn2{
       margin-top: 5%;
       margin-bottom: 40%;
@@ -80,6 +81,9 @@ body{
       width: 60%;
       margin-left: 20%;
       margin-bottom: 5%;
+}
+.row{
+      margin-left: 0px;
 }
 .section-1 .card-text, .para-1{
       color: rgba(0, 0, 0, 0.59);
