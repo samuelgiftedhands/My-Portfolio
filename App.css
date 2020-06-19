@@ -1,0 +1,14 @@
+body{
+    padding: 0%;
+    margin: 0;
+    font-family:'Lato';
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+.container{
+    background-image: url("dominion.jpg");
+    font-size: 45px;
+    text-align: center;
+    margin: 30px;
+}

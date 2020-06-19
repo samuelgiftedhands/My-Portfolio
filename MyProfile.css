@@ -1,0 +1,63 @@
+body, html{
+    height: 100%;
+    margin: 0 auto; 
+}
+*{
+    box-sizing: border-box;
+}
+.content{
+    background-image: url("../Profile/bgimage.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+   
+    
+}
+.my-image {
+  z-index: inherit;
+  position: absolute;
+  top: 125px;
+  z-index: 2;
+  left: 38%;
+
+}
+.my-image img{
+    border-radius:50%;
+    
+}
+#bg-text {
+    position: absolute;
+    z-index: inherit;
+    color:white;
+    font-weight: bold;
+    z-index: 3;  
+    font-size: 1rem; 
+    text-align: center;
+}
+#bg-text a{
+    color: bisque;
+    text-decoration: none;
+}
+#bg-text a:hover{
+    color: aqua;
+    text-decoration: none;
+}
+@media screen and (max-width: 768px){
+    .my-image img{
+        left:30%;
+    }
+}
+@media screen and (max-width: 320px){
+    .my-image{
+        left:30%;
+    }
+}
+

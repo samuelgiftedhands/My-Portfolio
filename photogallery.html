@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>Gallery</title>
+<link rel="stylesheet" href="photogallery.css"/>
+<link rel="stylesheet" href="../Profile/bootstrap.css"/>
+   </head>
+<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<div class="navbar-header">
+						 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+					   <a href="#" style="text-decoration: none;"><img src="logo.jpg" width="50" height="50"/>
+						 <span style="color:firebrick; font-size: 2rem;">2gether</span></a>
+					</div>
+					<div class="collapse navbar-collapse" id="bs-nav-demo">
+						<ul class="nav navbar-nav">
+							<li><a href="../Profile/InnerProfile.html">Return</a></li>
+							<li><a href="#">About</a></li>
+							<li><a href="#">Features</a></li>
+							<li><a href="#">Events</a></li>
+							<li><a href="#">Gallery</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Sign Up</a></li>
+							<li><a href="#">Login</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav><br><br>
+	<!-- main content-->
+<div id="container">
+ <img  class="slides" src="funmiray1.jpg"/>
+ <img class="slides"  src="funmiray2.jpg"/>
+ <img class="slides"  src="funmiray3.jpg"/>
+ <img class="slides"  src="funmiray4.jpg"/>
+ <img class="slides"  src="funmiray5.jpg"/>
+
+ <!--button clicks-->
+ <button class="btn" onclick ="plusIndex(-1)" id="btn1">&#10094;
+ </button>
+ <button class="btn" onclick ="plusIndex(1)" id="btn2">&#10095;
+ </button>
+ </div>
+
+ </body>
+ 
+ <!--javascript-->
+ <script>
+   var index = 1;
+   
+   function plusIndex(n){
+          index = index + n;
+		  showImage(index);
+   }
+   showImage(1);
+   
+   function showImage(n){
+           var i;
+		   var x= document.getElementsByClassName("slides");
+		   if(n > x.length) { index = 1};
+		   if(n < 1){index = x.length};
+		   for(i = 0; i<x.length;i++)
+		      {
+			       x[i].style.display = "none";
+			   }
+			  x[index-1].style.display = "block";
+			  }
+			  			  autoSlide();
+			  function autoSlide(){
+			   var i;
+		       var x = document.getElementsByClassName("slides");
+		   for(i = 0; i<x.length;i++)
+		      {
+			       x[i].style.display = "none";
+			   }
+			   if(index > x.length){index = 1}
+			  x[index-1].style.display = "block";
+			  index++;
+			  setTimeout(autoSlide,2000);
+			  }
+
+ </script>
+ </html>
